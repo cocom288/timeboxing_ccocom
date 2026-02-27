@@ -8,8 +8,8 @@ const Login = ({ onLogin }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Simulación: Credenciales quemadas para prueba
-    if (email === 'admin@solehadad.com' && password === '123456') {
-      onLogin({ name: 'Admin Solé Hadad', email });
+    if (email === 'admin@coconix.com' && password === '123456') {
+      onLogin({ name: 'Admin Coconix', email });
     } else {
       alert('Credenciales incorrectas');
     }
@@ -19,6 +19,8 @@ const Login = ({ onLogin }) => {
     <div className="login-container">
       <div className="login-card">
         <h2 className="login-title">Bienvenido</h2>
+        <br />
+        <p>Use las credenciales: <br /> correo admin@coconix.com <br /> contraseña 123456</p>
         <form onSubmit={handleSubmit} className="login-form">
           <div className="form-group">
             <label className="form-label">Email</label>
